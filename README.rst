@@ -1,22 +1,17 @@
-discord.py
+pda.py
 ==========
 
-.. image:: https://discord.com/api/guilds/789911027932200961/embed.png
-   :target: https://discord.gg/r3sSKJJ
-   :alt: Discord server invite
-.. image:: https://img.shields.io/pypi/v/discord.py.svg
-   :target: https://pypi.python.org/pypi/discord.py
+.. image:: https://pda.com/api/guilds/789911027932200961/embed.png
+   :target: https://pda.gg/r3sSKJJ
+   :alt: pda server invite
+.. image:: https://img.shields.io/pypi/v/pda.py.svg
+   :target: https://pypi.python.org/pypi/pda.py
    :alt: PyPI version info
-.. image:: https://img.shields.io/pypi/pyversions/discord.py.svg
-   :target: https://pypi.python.org/pypi/discord.py
+.. image:: https://img.shields.io/pypi/pyversions/pda.py.svg
+   :target: https://pypi.python.org/pypi/pda.py
    :alt: PyPI supported Python versions
 
-A modern, easy to use, feature-rich, and async ready API wrapper for Discord written in Python.
-
-The Future of discord.py
---------------------------
-
-Please read the `gist <https://gist.github.com/Rapptz/4a2f62751b9600a31a0d3c78100287f1>`_ for the future of this project. It's been a good one.
+A modern, easy to use, feature-rich, and async ready API wrapper for discord written in Python.
 
 Key Features
 -------------
@@ -35,28 +30,28 @@ To install the library without full voice support, you can just run the followin
 .. code:: sh
 
     # Linux/macOS
-    python3 -m pip install -U discord.py
+    python3 -m pip install -U pda.py
 
     # Windows
-    py -3 -m pip install -U discord.py
+    py -3 -m pip install -U pda.py
 
 Otherwise to get voice support you should run the following command:
 
 .. code:: sh
 
     # Linux/macOS
-    python3 -m pip install -U "discord.py[voice]"
+    python3 -m pip install -U "pda.py[voice]"
 
     # Windows
-    py -3 -m pip install -U discord.py[voice]
+    py -3 -m pip install -U pda.py[voice]
 
 
 To install the development version, do the following:
 
 .. code:: sh
 
-    $ git clone https://github.com/Rapptz/discord.py
-    $ cd discord.py
+    $ git clone https://github.com/SangamBot/pda.git
+    $ cd pda.py
     $ python3 -m pip install -U .[voice]
 
 
@@ -75,9 +70,9 @@ Quick Example
 
 .. code:: py
 
-    import discord
+    import pda
 
-    class MyClient(discord.Client):
+    class MyClient(pda.Client):
         async def on_ready(self):
             print('Logged on as', self.user)
 
@@ -97,8 +92,8 @@ Bot Example
 
 .. code:: py
 
-    import discord
-    from discord.ext import commands
+    import pda
+    from pda.ext import commands
 
     bot = commands.Bot(command_prefix='>')
 
@@ -113,6 +108,6 @@ You can find more examples in the examples directory.
 Links
 ------
 
-- `Documentation <https://discordpy.readthedocs.io/en/latest/index.html>`_
-- `Official Discord Server <https://discord.gg/r3sSKJJ>`_
-- `Discord API <https://discord.gg/discord-api>`_
+- `Documentation <https://pdapy.readthedocs.io/en/latest/index.html>`_
+- `Official pda Server <https://pda.gg/r3sSKJJ>`_
+- `pda API <https://pda.gg/pda-api>`_
